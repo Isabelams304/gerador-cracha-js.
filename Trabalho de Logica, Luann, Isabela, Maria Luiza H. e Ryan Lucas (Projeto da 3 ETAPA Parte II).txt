@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recolha de Dados</title>
+</head>
+<body>
+
+    <script>
+        
+        let nome = prompt("Digite o seu nome:");
+        let sobrenome = prompt("Digite o seu sobrenome:");
+        let anoNascimento = prompt("Digite o seu ano de nascimento:");
+
+        
+        anoNascimento = Number(anoNascimento);
+
+        
+        let alunoAtivo = confirm("É aluno ativo da instituição?");
+
+       
+        let anoAtual = 2026;
+        let idadeEstimada = anoAtual - anoNascimento;
+
+        
+        let sobrenomeMaiusculo = sobrenome.toUpperCase();
+
+        let quantidadeCaracteres = nome.length;
+
+     
+        console.log("CRACHÁ VIRTUAL: " + sobrenomeMaiusculo + ", " + nome);
+        console.log("Idade estimada: " + idadeEstimada + " anos.");
+        console.log("O seu primeiro nome tem " + quantidadeCaracteres + " letras.");
+        console.log("Estatuto de aluno ativo: " + alunoAtivo);
+    </script>
+
+</body>
+</html>
